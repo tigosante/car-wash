@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::middleware("auth")->group(function () {
+    Route::get('/', [App\Http\Controllers\DashBoard\DashBoardController::class, 'index'])->name('dashBoard');
 });
