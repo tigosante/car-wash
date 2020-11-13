@@ -10,4 +10,5 @@ const selectItem = () => {
     ]);
 };
 
+window.addEventListener("load", selectItem);
 window.addEventListener("click", selectItem);

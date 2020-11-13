@@ -12,17 +12,17 @@ const sidebarCsshDestiny = "public/components/sidebar.css";
 const sidebarJshOrgin = "resources/views/components/sidebar/sidebar.js";
 const sidebarJshDestiny = "public/components/sidebar.js";
 
-const collaboratorCsshOrigin = "resources/views/register/collaborator.css";
-const collaboratorCsshDestiny = "public/register/collaborator.js";
+const collaboratorCsshOrigin = "resources/views/manage/collaborator.css";
+const collaboratorCsshDestiny = "public/manage/collaborator.js";
 
-const typeServiceCsshOrigin = "resources/views/register/type_service.css";
-const typeServiceCsshDestiny = "public/register/type_service.js";
+const typeServiceCsshOrigin = "resources/views/manage/type_service.css";
+const typeServiceCsshDestiny = "public/manage/type_service.js";
 
-const serviceCsshOrigin = "resources/views/register/service.css";
-const serviceCsshDestiny = "public/register/service.js";
+const serviceCsshOrigin = "resources/views/manage/service.css";
+const serviceCsshDestiny = "public/manage/service.js";
 
-const userCsshOrigin = "resources/views/register/user.css";
-const userCsshDestiny = "public/register/user.js";
+const userCsshOrigin = "resources/views/manage/user.css";
+const userCsshDestiny = "public/manage/user.js";
 
 mix.styles(apphOrgin, apphDestiny)
     .styles(headerhOrgin, headerhDestiny)

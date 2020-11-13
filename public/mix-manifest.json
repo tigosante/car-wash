@@ -3,5 +3,8 @@
     "/components/header.css": "/components/header.css",
     "/components/sidebar.css": "/components/sidebar.css",
     "/components/sidebar.js": "/components/sidebar.js",
-    "/register/collaborator.js": "/register/collaborator.js"
+    "/manage/collaborator.js": "/manage/collaborator.js",
+    "/manage/type_service.js": "/manage/type_service.js",
+    "/manage/service.js": "/manage/service.js",
+    "/manage/user.js": "/manage/user.js"
 }
