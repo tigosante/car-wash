@@ -75,6 +75,15 @@
     transition: max-height 0.8s ease-in-out;
 }
 
+.sidebar-item-icon {
+    transition: all 0.1s ease-in-out;
+}
+
+.sidebar-item-dad:hover .sidebar-item-icon {
+    transform: rotate(90deg);
+    transition: all 0.1s ease-in-out;
+}
+
 .sidebar-item-child {
     width: calc(var(--sidebar-item-width) - 20%);
     height: var(--sidebar-item-child-height);
