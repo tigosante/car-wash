@@ -8,6 +8,8 @@
 
     --sidebar-width: 15%;
     --sidebar-height: calc(var(--body-height) - var(--header-height));
+
+    --text-color: rgb(19, 19, 19);
 }
 
 * {
@@ -26,6 +28,22 @@ html,
 body {
     width: var(--body-width);
     height: var(--body-height);
+}
+
+a:link {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+a:active {
+    color: var(--text-color);
 }
 
 .flex-center-between {
