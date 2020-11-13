@@ -1,0 +1,89 @@
+:root {
+    --width-less: 20px;
+
+    --sidebar-padding: 15px;
+    --sidebar-item-width: 100%;
+    --sidebar-item-height: 50px;
+    --sidebar-item-child-height: calc(var(--sidebar-item-height) - 10px);
+
+    --sidebar-item-margin: 0px 0px calc(var(--sidebar-padding) - 10px) 0px;
+    --sidebar-item-child-margin: 0px 15px calc(var(--sidebar-padding) - 10px)
+        0px;
+}
+
+#sidebar {
+    width: var(--sidebar-width);
+    height: var(--sidebar-height);
+
+    padding: calc(var(--sidebar-padding) - 5px)
+        calc(var(--sidebar-padding) - 10px) calc(var(--sidebar-padding) - 5px)
+        calc(var(--sidebar-padding) - 10px);
+
+    background-color: pink;
+}
+
+.sidebar-item,
+.sidebar-item-text {
+    cursor: pointer;
+
+    width: var(--sidebar-item-width);
+    height: var(--sidebar-item-height);
+
+    border-radius: var(--radius-items);
+
+    margin: var(--sidebar-item-margin);
+    padding: var(--sidebar-padding);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar-item,
+.sidebar-item-text,
+.sidebar-item-child {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-item:hover,
+.sidebar-item-text:hover,
+.sidebar-item-child:hover {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar-item-expansive {
+    width: 100%;
+    max-height: 0;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    overflow: hidden;
+
+    transition: max-height 0.1s ease-in-out;
+}
+
+.sidebar-item-dad:hover > .sidebar-item-expansive {
+    max-height: 900px;
+    width: var(--sidebar-item-width);
+
+    overflow: auto;
+    overflow-y: hidden;
+
+    transition: max-height 0.8s ease-in-out;
+}
+
+.sidebar-item-child {
+    width: calc(var(--sidebar-item-width) - 20%);
+    height: var(--sidebar-item-child-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    margin: var(--sidebar-item-child-margin);
+    padding: 0px 0px 0px var(--sidebar-padding);
+    border-radius: var(--radius-items);
+}

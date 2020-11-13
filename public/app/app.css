@@ -1,0 +1,35 @@
+:root {
+    --radius-items: 10px;
+    --header-width: 100%;
+    --header-height: 7vh;
+
+    --body-width: 100%;
+    --body-height: 100%;
+
+    --sidebar-width: 15%;
+    --sidebar-height: calc(var(--body-height) - var(--header-height));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    outline: none;
+    text-decoration: none;
+
+    font-weight: inherit;
+
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: var(--body-width);
+    height: var(--body-height);
+}
+
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
