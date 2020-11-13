@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="{{url(mix("components/header.css"))}}">
         <link rel="stylesheet" href="{{url(mix("components/sidebar.css"))}}">
 
+        <script src="{{url(mix("components/sidebar.js"))}}"></script>
+
         <title>Car Wash</title>
     </head>
     <body>

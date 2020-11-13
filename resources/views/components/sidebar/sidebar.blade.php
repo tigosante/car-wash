@@ -1,16 +1,12 @@
 <div id="sidebar">
-    <div class="sidebar-item flex-center-between">
-        <div>Paniel Administrador</div>
-        <div>></div>
-    </div>
-    <div class="sidebar-item flex-center-between">
+    <a href="/" class="sidebar-item flex-center-between">
         <div>DashBoard</div>
         <div>></div>
-    </div>
-    <div class="sidebar-item flex-center-between">
+    </a>
+    <a href="/add/service" class="sidebar-item flex-center-between">
         <div>Vincular Serviço</div>
         <div>></div>
-    </div>
+    </a>
     <div class="sidebar-item-dad">
         <div class="sidebar-item-dad-button border-radius flex-center-between">
             <div class="sidebar-item-text">Cadastrar</div>
@@ -18,9 +14,9 @@
         </div>
 
         <div class="sidebar-item-expansive">
-            <div class="sidebar-item-child border-radius">item 1</div>
-            <div class="sidebar-item-child border-radius">item 2</div>
-            <div class="sidebar-item-child border-radius">item 3</div>
+            <a href="/add/user" class="sidebar-item-child border-radius">Cliente</a>
+            <a href="/add/service" class="sidebar-item-child border-radius">Serviço</a>
+            <a href="/adm/add/user" class="sidebar-item-child border-radius">Colaborador</a>
         </div>
     </div>
 </div>

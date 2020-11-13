@@ -6,9 +6,13 @@ const appPathDestiny = "public/app/app.css";
 const headerPathOrgin = "resources/views/components/header/header.css";
 const headerPathDestiny = "public/components/header.css";
 
-const sidebarPathOrgin = "resources/views/components/sidebar/sidebar.css";
-const sidebarPathDestiny = "public/components/sidebar.css";
+const sidebarCssPathOrgin = "resources/views/components/sidebar/sidebar.css";
+const sidebarCssPathDestiny = "public/components/sidebar.css";
+
+const sidebarJsPathOrgin = "resources/views/components/sidebar/sidebar.js";
+const sidebarJsPathDestiny = "public/components/sidebar.js";
 
 mix.styles(appPathOrgin, appPathDestiny)
     .styles(headerPathOrgin, headerPathDestiny)
-    .styles(sidebarPathOrgin, sidebarPathDestiny);
+    .styles(sidebarCssPathOrgin, sidebarCssPathDestiny)
+    .scripts(sidebarJsPathOrgin, sidebarJsPathDestiny);
