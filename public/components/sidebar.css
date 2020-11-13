@@ -23,7 +23,7 @@
 }
 
 .sidebar-item,
-.sidebar-item-text {
+.sidebar-item-dad-button {
     cursor: pointer;
 
     width: var(--sidebar-item-width);
@@ -39,13 +39,13 @@
 }
 
 .sidebar-item,
-.sidebar-item-text,
+.sidebar-item-dad-button,
 .sidebar-item-child {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-item:hover,
-.sidebar-item-text:hover,
+.sidebar-item-dad-button:hover,
 .sidebar-item-child:hover {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.4);
@@ -73,6 +73,12 @@
     overflow-y: hidden;
 
     transition: max-height 0.8s ease-in-out;
+}
+
+.sidebar-item,
+.sidebar-item-text {
+    overflow: hidden;
+    white-space: wrap;
 }
 
 .sidebar-item-icon {

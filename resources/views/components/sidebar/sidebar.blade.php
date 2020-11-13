@@ -12,8 +12,8 @@
         <div>></div>
     </div>
     <div class="sidebar-item-dad">
-        <div class="sidebar-item-text border-radius flex-center-between">
-            <div>Cadastrar</div>
+        <div class="sidebar-item-dad-button border-radius flex-center-between">
+            <div class="sidebar-item-text">Cadastrar</div>
             <div class="sidebar-item-icon">></div>
         </div>
 
