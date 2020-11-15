@@ -2,42 +2,44 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+/**
+ * @property integer $id
+ * @property string $name
+ * @property string $age
+ * @property string $cpf
+ * @property string $cnpj
+ * @property string $rg
+ * @property string $doc_type
+ * @property string $address
+ * @property string $created_at
+ * @property string $updated_at
+ */
+class User extends Model
 {
-    use HasFactory, Notifiable;
+    protected $table = "user";
 
     /**
-     * The attributes that are mass assignable.
+     * The "type" of the auto-incrementing ID.
      *
-     * @var array
+     * @var string
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $keyType = 'integer';
 
     /**
-     * The attributes that should be hidden for arrays.
-     *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $fillable = ['name', 'age', 'cpf', 'cnpj', 'rg', 'doc_type', 'address', 'created_at', 'updated_at'];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public static function destory()
+    {
+        $deletes = true;
+
+        foreach (User::all() as $user) {
+            $deletes = $deletes && $user->delete();
+        }
+
+        return $deletes;
+    }
 }
