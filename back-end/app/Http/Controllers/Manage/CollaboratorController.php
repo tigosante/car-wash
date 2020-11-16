@@ -9,6 +9,6 @@ class CollaboratorController extends Controller
 {
     public function index()
     {
-        return view("manage.collaborator");
+        return view("");
     }
 }

@@ -9,6 +9,6 @@ class TypeServiceController extends Controller
 {
     public function index()
     {
-        return view("manage.type_service");
+        return view("");
     }
 }
