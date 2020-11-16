@@ -3,5 +3,5 @@ import React from 'react'
 import './user.css'
 
 export default () => {
-  return <div></div>
+  return <div>user</div>
 }
